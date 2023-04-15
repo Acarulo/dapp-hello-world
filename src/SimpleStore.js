@@ -64,12 +64,12 @@ const SimpleStore = () => {
             {defaultAccount !== null && <h3>Address: {defaultAccount}</h3>}
 
             <form className = "SSForm" onSubmit={setHandler}>
-                <input id='setText' type='text'/>
+                <input id='setText' placeholder="Insert text for contract update" type='text'/>
                 <button type="submit">Update contract</button>
             </form>
 
             <button onClick={getCurrentValue}>Get current value</button>
-            {contractValue}
+            {contractValue !== null && <h3>Current value is: {contractValue} </h3>}
             {errorMessage}
         </div>
     )

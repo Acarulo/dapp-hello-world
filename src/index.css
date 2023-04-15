@@ -40,6 +40,7 @@ body {
 
 .SSDiv {
   width: 90%;
+  flex-direction: column;
   flex-grow: 1;
   overflow-y: auto;
   padding: 1rem 0 0 0.75rem;
@@ -49,12 +50,13 @@ body {
 .SSDiv button {
   height: 48px;
   min-width: 48px;
-  border-radius: 0.25rem;
+  border-radius: .25rem;
   padding: 0.5rem;
   font-size: 1rem;
   background-color: blue;
   color: #fff;
   cursor: pointer;
+  margin-bottom: 0.5rem;
 }
 
 .SSForm input[type="text"] {
@@ -65,4 +67,9 @@ body {
   padding: 0.25rem;
   border-radius: 0.25rem;
   outline: none;
+  margin-bottom: 0.5rem;
+}
+
+.SSDiv h3 {
+  margin-bottom: 0.5rem;
 }
