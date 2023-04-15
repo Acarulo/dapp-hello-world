@@ -58,12 +58,12 @@ const SimpleStore = () => {
     }
 
     return (
-        <div>
+        <div className="SSDiv">
             <h1>{"Get/set interaction with SimpleStorage contract"}</h1>
             <button onClick={connectWalletHandler}> {connectButtonText} </button>
             {defaultAccount !== null && <h3>Address: {defaultAccount}</h3>}
 
-            <form onSubmit={setHandler}>
+            <form className = "SSForm" onSubmit={setHandler}>
                 <input id='setText' type='text'/>
                 <button type="submit">Update contract</button>
             </form>

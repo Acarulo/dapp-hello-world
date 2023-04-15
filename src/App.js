@@ -1,4 +1,3 @@
-import './App.css';
 import SimpleStore from './SimpleStore';
 
 function App() {
